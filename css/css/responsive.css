@@ -1,0 +1,95 @@
+@media only screen and (max-width:968px){
+    .navbar-inverse .navbar-nav>li>a{
+    	margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 911px){
+    .navbar-inverse .navbar-nav>li>a{
+        padding-left: 10px;
+        }}
+   
+
+
+@media only screen and (max-width: 479px){
+    .owl-buttons{ bottom: 30%; }
+}
+@media only screen and (max-width: 992px){
+    .contact-form input{
+    color: black;
+    width: 90%;
+    padding: 5px;
+    border: none;
+    height: 35px;
+    margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 991px){
+    .navbar-inverse .navbar-nav>li>a{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .myContainer{
+    padding: 0px !important;
+}
+}
+@media only screen and (max-width: 767px){
+    #myNavbar{
+    float: none;
+    width: 105%;
+    margin-top: 15px;
+    text-align: center;
+}
+@media only screen and (max-width: 767px){
+    .navbar-collapse{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+}
+@media only screen and (max-width: 631px){
+    .contact-form input{
+    color: black;
+    width: 88%;
+    padding: 5px;
+    border: none;
+    height: 35px;
+    margin-bottom: 30px;
+}
+}
+@media only screen and (max-width: 631px){
+    .contact-form .msg input{
+    color: black;
+    width: 89%;
+    padding: 5px;
+    border: none;
+    height: 100px;
+    margin-bottom: 30px;
+}
+}  
+@media screen and (max-width: 1139px){
+    .serviceBox{
+        min-height: 427px;
+    }} 
+    /* If the screen size is 701px wide or more, set the font-size of <div> to 100px and 80px */
+@media screen and (min-width: 701px){
+.carousel-caption h3{
+    font-size: 80px; font-weight: bold; color: white; text-shadow: 6px 6px 12px #000000;
+}
+.carousel-caption h6{
+    font-size: 80px; font-weight: bold; color: #a90e14; text-shadow: 6px 6px 12px #000000;
+}
+}
+/* If the screen size is 700px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 701px){
+.carousel-caption h3{
+    font-size: 40px; font-weight: bold; color: white; text-shadow: 6px 6px 12px #000000;
+}
+.carousel-caption h6{
+    font-size: 40px; font-weight: bold; color: #a90e14; text-shadow: 6px 6px 12px #000000;
+}
+}
+
