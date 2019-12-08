@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+	  .navbar{
+	   
+	  width:100%;
+      max-width:100%;
+	  }
+.navbar-inverse{
+padding:0 0 0 0;
+margin:0 0 0 0;
+background-color:#c85339 !important;
+}	
+.carousel {
+		position:inherit !important;
+		}
+.carousel-inner {
+	 width: 100%;
+	 overflow: hidden;
+	 }
+	 .carousel-caption{
+	float:left;
+	font-family: 'Playball', cursive;
+	background:url(../images/bannercaption%20bg.png) repeat;
+	text-align:left;
+	 padding:0px 0px 0 10px;
+      bottom:20px;
+	  left:10px;
+}
+.carousel-caption h2{
+	font-size:15px;
+	
+}
+.carousel-caption p{
+font-family: 'Lato', sans-serif;
+font-size:10px;
+line-height:normal;
+}
+.carousel-caption h2 a{
+	background-color:transparent;
+	border: solid 1px #d3d1d1;
+	padding: 6px 5px 6px 8px;
+	color:#fff;
+	font-size:10px;
+}
+.facility h2{
+font-family: 'Playball', cursive;
+font-size:25px;	
+color:#0d1a41;
+}
+
+.portion p{
+	padding:10px 0 0 0;
+	font-family: 'Lato', sans-serif;
+	font-size:13px;
+	font-style:normal;
+}
+.rooms h2{
+font-family: 'Playball', cursive;
+font-size:25px;	
+color:#0d1a41;
+}
+.rooms p{
+	font-family:"open Sans";
+	font-style:italic;
+	font-size:13px !important;
+	color:#9a9999;
+}
+.know1 h2{
+font-family: 'Playball', cursive;
+font-size:25px;	
+color:#fff;
+}
+.know1 h3{
+	font-family:"open Sans";
+    font-style:italic;
+	font-size:13px;
+	color:#118ea2;
+	margin-top: 0;
+}
+.know1 p{
+    padding:10px 0 0px 0;
+	font-family: 'Lato', sans-serif;
+	font-size:12px;
+	font-style:normal;
+	color:#beccf4;
+	
+}
+.knowpara p{
+    padding:10px 0 20px 0;
+	font-family: 'Lato', sans-serif;
+	font-size:12px;
+	font-style:normal;
+	color:#beccf4;
+	
+}
+.custom-navigation{
+    position: relative;
+    text-align: right;
+    right:0px !important;
+    top:-10px !important;
+    background: #fff;
+}
+
+.facility .button a{
+	color:#fff;
+	font-style:normal;
+	font-family:'Amaranth', sans-serif;
+	font-size:15px;
+	border: solid 1px #d3d1d1;
+	background:#85ab00;
+	display:inline-block;
+	right:0;
+	margin:0 0 15px 0;
+	padding:15px 20px 15px 20px;
+}
+.knowpoints li{
+	float:left;
+	position:relative;
+	font-family: 'Lato', sans-serif;
+	font-size:15px;
+	color:#fff;
+	padding:18px 25px 20px 50px;
+}
+.delux ol{
+    font-family: 'Lato', sans-serif;
+	font-size:15px;
+	font-style:normal;
+	color:#2c2d2e;
+	padding:0px 0 0px 0;
+
+}
+.delux li{
+	padding:0px 0 0 0;
+}
+.delux i{
+	padding: 0px 10px 10px 0px;
+}
+.delux p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    padding: 20px 0 20px 0;
+}
+.footer1 ul a{
+		color:#474747;
+	    font-family:'Source Sans Pro', sans-serif;
+		font-size:12px;
+}
+.footer1 ul a:hover{
+		color:#fff;
+	    font-family:'Source Sans Pro', sans-serif;
+		font-size:12px;
+}
+.footer1 ul li{
+	    
+	   	display:inline-block;
+        padding: 0px 5px 0px 5px;
+        border-right: 1px solid;
+}
+.footer1 ul li:last-child {
+    border-right:none;
+}
+.footer1 p{
+	padding:0 0 0px 0;
+	font-family:'Source Sans Pro', sans-serif;
+    font-size:12px
+}
+.social ul li{
+	
+	padding:0 10px 0 10px;
+	border:none;
+}
+.footer1 img{
+	padding:0px 0 0px 0;
+}
+.carousel-inner .item{
+	margin-top:110px;
+}
+.top-banner img{
+	padding-top: 111px;
+}
+.navbar-nav {
+    margin: 55px -15px 0 -15px;
+}
+}
+@media(min-width:768px) and (max-width:1024px){
+	 .navbar{
+	  
+	  width:100%;
+      max-width:100%;
+	  }
+.navbar-inverse{
+padding:0 0 0 0;
+margin:0 0 0 0;
+background-color:#c85339;
+}
+.carousel {
+		position:inherit !important;
+		}
+		.navlist{	
+         padding:0px;
+		}	
+		.carousel-caption{
+	float:left;
+	font-family: 'Playball', cursive;
+	background:url(../images/bannercaption%20bg.png) repeat;
+	text-align:left;
+	 max-width: 550px;
+     padding:20px 30px;
+      bottom:50px;
+	  left:30px;
+}
+.navbar-nav>li>a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+}

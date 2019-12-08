@@ -1,0 +1,50 @@
+@media only screen and (min-width: 992px){
+	.col-md-4{
+		width: 30.333333%;
+		padding-top: 25px;
+    	padding-bottom: 0px;
+	}
+}
+@media only screen and (max-width: 991px){
+	.work-quality img{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 1288px){
+.header-txt h1{
+    font-size: 80px;
+    }}
+
+
+
+
+@media only screen and (min-width: 601px){
+	.header-txt {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width: 600px){
+	.header-txt {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 100px;
+}
+}
+@media (min-width: 768px){
+.serv .col-sm-6 {
+    width: 45%;
+}}
+
+@media only screen and (max-width: 500px){
+	.logo img{
+		width: 170px;
+	}
+}

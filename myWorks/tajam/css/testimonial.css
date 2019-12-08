@@ -1,0 +1,115 @@
+#testimonial-slider{
+    padding: 50px 20px 35px 20px;
+    text-align: center;
+    padding-top: 15%;
+}
+.testimonial .description{
+    font-size: 14px;
+    color: #fff;
+    line-height: 26px;
+    text-indent: 30px;    
+}
+.testimonial .description:before{
+    font-size: 28px;
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 0;
+    left: -15px;
+}
+
+.testimonial .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+}
+.owl-buttons{
+    width: 100%;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+}
+.owl-prev,
+.owl-next{
+    position: absolute;
+    left: 0;
+    transition: all 0.8s ease-in-out 0s;
+}
+.owl-next{
+    left: auto;
+    right: 0;
+}
+.owl-buttons .owl-prev:before,
+.owl-buttons .owl-next:before{
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 60px;
+    font-weight: 900;
+    color: #cacaca;
+    line-height: 20px;
+    opacity: 0.8;
+}
+.owl-buttons .owl-next:before{
+    content: "\f105";
+}
+.owl-buttons .owl-prev:hover:before,
+.owl-buttons .owl-next:hover:before{
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-buttons div{
+    background: transparent;
+}
+.owl-theme .owl-controls{
+    margin-top: 40px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 65px;
+    height: 65px;
+    background: url("../images/client/1.png") no-repeat;
+    background-size: cover;
+    transition: all 0.4s ease-in-out 0.1s;
+}
+.owl-theme .owl-controls .owl-page:nth-child(2) span{
+    background: url("../images/client/2.png") no-repeat;
+    background-size: cover;
+}
+.owl-theme .owl-controls .owl-page:nth-child(3) span{
+    background: url("../images/client/3.png") no-repeat;
+    background-size: cover;
+}
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    opacity: 0.5;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page.active:hover span{
+    opacity: 1;
+    width: 75px !important;
+    height: 75px !important;
+    border: none !important;
+}
+@media only screen and (max-width: 479px){
+    .owl-buttons{ bottom: 30%; }
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 65px !important;
+    height: 65px !important;
+    border: none !important;
+    background-color: transparent;
+}
+.demo{
+    position: relative;
+}
+.owl-carousel .owl-theme{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

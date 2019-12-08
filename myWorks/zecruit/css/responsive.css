@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1024px){
+	.service-caption{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 991px){
+	.padding-left{
+	padding-left: 50px;
+}
+	.navbar-brand>img {
+    display: block;
+    width: 250px;
+}
+.nav>li>a {
+    margin: 25px 5px 25px 5px;
+}
+
+	.s-media-header li {
+    	border-left: 1px solid #e5e5e500;
+}
+.border-right{
+	border-right: 1px solid #e5e5e500;
+}
+.phone-mail-header li {
+    border-left: 1px solid #e5e5e500;
+}
+.footer-img img {
+    width: 250px;
+}
+
+.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+    
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    text-align: center;
+}
+.service-caption {
+    left: 155px;
+	width: 55%;
+}
+.owl-carousel-control.right {
+    position: absolute !important;
+    top: 40% !important;
+    right: -3%;
+}
+}
+@media screen and (max-width: 780px){
+	.footer-img img {
+    width: 200px;
+}
+.service-caption{
+	width:55%;
+}
+}
+@media screen and (max-width: 767px){
+	.padding-left{
+	padding-left: 15px;
+}
+	.s-media-header {
+    	float: left;
+}
+.container>.navbar-header {
+    margin-bottom: 27px;
+}
+.about-area{	
+	margin-left:0;	
+}
+.navbar-fixed-top {
+    margin-top: 99px;
+}
+.service-caption {
+    left: auto;
+    width: 54%;
+}
+.careerPage-info label {
+    margin-top:0px !important;
+    margin-bottom:0 !important;
+    
+}
+.careerPage-info{
+	padding-left:5 !important;
+	padding-right:5 !important;
+}
+.form-control-file {
+    margin: 8px 0px!important;
+}
+.careerPage-info input[type=submit] {
+    float: right;
+    margin-right: 0px !important;
+}
+.careerPage-info {
+    
+    min-height: 935px;
+    
+}
+}
+
+@media screen and (max-width: 527px){
+.owl-carousel-control.right {
+    position: absolute !important;
+    top: 40% !important;
+    right: -1%;
+}
+.servicePage-img img{
+	width:100%;
+}
+
+}
+@media screen and (max-width: 414px){
+	.service-caption{
+		width:91.5%;
+	}
+	.navbar-fixed-top {
+    margin-top: 99px;
+}
+
+
+}
+@media screen and (max-width: 393px){
+	.navbar-fixed-top {
+    margin-top: 79px;
+}
+.phone-mail-header li {
+    padding: 5px 15px;
+}
+
+}
+@media screen and (max-width: 375px){
+	.service-caption{
+		width:91%;
+	}
+
+}
+@media screen and (max-width: 350px){
+	.navbar-brand>img {
+    	width: 235px;
+}
+}
