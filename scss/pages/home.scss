@@ -1,0 +1,283 @@
+.navBar-section {
+    .navbar {
+        background-color: #000;
+
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            img {
+                width: 116px;
+            }
+        }
+
+        .collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.banner-section {
+    margin-bottom: 100px;
+    background-image: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    position: relative;
+
+
+
+}
+
+.about-section {
+
+    .image-hover {
+        box-shadow: 0 28px 16px -26px #0000007a;
+        transition: all 0.3s ease-in-out;
+        max-width: 325px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover {
+            box-shadow: 0 58px 36px -56px #0000007a;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        text-align: justify;
+        font-size: 16px;
+    }
+}
+
+.works-section{
+    margin-top: 100px;
+    .works{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.photography-section {
+    margin-top: 100px;
+
+    .instagram {
+        .owl-stage-outer {
+            .owl-stage {
+                display: flex;
+
+                .owl-item {
+                    a {
+                        display: inline-block;
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+                        &:after{
+                            position: absolute;
+                            content: "";
+                            width: 20px;
+                            height: 20px;
+                            background-image: url("../images/instagram.svg");
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            top: 20px;
+                            right: 20px;
+                        }
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .owl-dots {
+            display: none;
+        }
+    }
+}
+
+
+
+
+#followMe-id {
+    background-color: #dedede;
+    padding: 40px 0px;
+
+    .followMe {
+        text-align: center;
+
+        ul {
+            margin-bottom: 0px;
+
+            li {
+                list-style: none;
+                display: inline-block;
+
+                &:nth-child(1) {
+                    a {
+                        &:hover {
+                            span {
+                                svg {
+                                    path {
+                                        fill: #3b5998;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    a {
+                        &:hover {
+                            span {
+                                svg {
+                                    path {
+                                        fill: #0cd261;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    a {
+                        &:hover {
+                            span {
+                                svg {
+                                    path {
+                                        fill: #bc2a8d;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+
+                &:nth-child(4) {
+                    a {
+                        &:hover {
+                            span {
+                                svg {
+                                    path {
+                                        fill: #007bb6;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    a {
+                        &:hover {
+                            span {
+                                svg {
+                                    path {
+                                        fill: #00aced;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+
+                &:nth-child(6) {
+                    a {
+                        &:hover {
+                            span {
+                                svg {
+                                    path {
+                                        fill: #dd4b39
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    position: relative;
+                    width: 60px;
+                    height: 60px;
+                    display: block;
+                    text-align: center;
+                    margin: 0 10px;
+                    border-radius: 50%;
+                    padding: 6px;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                    background: linear-gradient(0deg, #ddd, #fff);
+                    transition: 0.5s;
+
+                    &:hover {
+                        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+                    }
+
+                    span {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        background: linear-gradient(0deg, #fff, #ddd);
+                        border-radius: 50%;
+                        line-height: calc(60px - 12px);
+                        font-size: 24px;
+                        color: #262626;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer-wrapper {
+    font-size: 14px;
+    background-color: black;
+    line-height: 55px;
+
+    .footer-text {
+        p {
+            color: white;
+            margin: 0;
+        }
+    }
+}
