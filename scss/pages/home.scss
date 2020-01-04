@@ -30,7 +30,7 @@
     background-image: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: 50% 0 fixed;
     height: 100vh;
     position: relative;
 
@@ -279,5 +279,14 @@
             color: white;
             margin: 0;
         }
+    }
+}
+
+.aboutpara{
+    position: relative;
+    .para{
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }

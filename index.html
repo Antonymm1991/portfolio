@@ -31,8 +31,8 @@
                             <a class="nav-link" href="#photographyId">Photography</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="#followMe-id">Follow Me</a>
-                            </li>
+                            <a class="nav-link" href="#followMe-id">Follow Me</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -53,8 +53,8 @@
                         <img src="images/about-me.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <p>Hi I am Antony Manuel, a creative WEB / Graphic designer with 2 years of experience in this
+                <div class="col-md-7 aboutpara">
+                    <p class="para">Hi I am Antony Manuel, a creative WEB / Graphic designer with 2 years of experience in this
                         industry. I was born and brought up in the historic city of Kochi, Kerala (India). Well, I
                         completed my degree in St. Albert’s College in 2011 and since then I’ve been busy with my hues
                         and palette. I have gained design experience working in Alapatt Global. Later on I realized what
@@ -73,37 +73,37 @@
 
 
     <section id="worksId" class="works-section">
-           
-<div class="container">
-        <h1>Recent Works</h1>
-    <div class="row">
-            <div class="col-md-3 col-sm-6">
+
+        <div class="container">
+            <h1>Recent Works</h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
                     <a class="works" target="_blank" href="https://www.rakporcelain.com/">
                         <img src="images/rak.jpg" alt="">
                     </a>
                 </div>
-        <div class="col-md-3 col-sm-6">
-            <a class="works" target="_blank" href="works/judeson/index.html">
-                <img src="images/judeson.png" alt="">
-            </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-                <a class="works" target="_blank" href="works/maven/index.html">
-                    <img src="images/maven-thumb.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6">
+                    <a class="works" target="_blank" href="works/judeson/index.html">
+                        <img src="images/judeson.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a class="works" target="_blank" href="works/maven/index.html">
+                        <img src="images/maven-thumb.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
                     <a class="works" target="_blank" href="works/techspace/index.html">
                         <img src="images/techspace.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                        <a class="works" target="_blank" href="works/beachview/index.html">
-                            <img src="images/beachview.png" alt="">
-                        </a>
-                    </div>
-    </div>
-</div>
+                    <a class="works" target="_blank" href="works/beachview/index.html">
+                        <img src="images/beachview.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="photographyId" class="photography-section">
@@ -350,7 +350,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="footer-text">
-                        <p> Copyright © 2019 || All rights reserved</p>
+                        <p> Copyright © 2020 || All rights reserved</p>
                     </div>
                 </div>
             </div>
@@ -363,15 +363,33 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/fontawesome.min.js"></script>
+<script src="js/scripts/jquery.parallax-1.1.3.js"></script>
+<script src="js/scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script src="js/scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script src="js/custom.js"></script>
 
 </html>
 
-<script>
+<!-- <script>
     var images = document.querySelectorAll('profileImg');
     new simpleParallax(images);
-</script>
+</script> -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.banner-section').localScroll(100);
+        
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('.banner-section').parallax("50%", 0.4);
+        $('.para').parallax("50%", 0.1);
+        $('.about-section').parallax("50%", 0.4);
+       
+    })
+    </script>
