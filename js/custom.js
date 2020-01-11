@@ -29,7 +29,7 @@ $( document ).ready(function() {
         lazyLoad:true,
         // loop:true,
         margin:0,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1000,
         responsive:{
             575.98:{
