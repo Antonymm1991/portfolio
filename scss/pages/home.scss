@@ -66,6 +66,12 @@
 
 .works-section{
     margin-top: 100px;
+    @media (max-width: 767.98px){
+        margin-top: 375px;
+    }
+    @media (max-width: 575.98px){
+        margin-top: 530px;
+    }
     .works{
         display: inline-block;
         width: 100%;
@@ -130,10 +136,12 @@
 
         ul {
             margin-bottom: 0px;
+            padding-left: 0;
 
             li {
                 list-style: none;
                 display: inline-block;
+                margin-bottom: 15px;
 
                 &:nth-child(1) {
                     a {
