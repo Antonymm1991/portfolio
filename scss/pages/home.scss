@@ -1,3 +1,6 @@
+h1{
+    margin-bottom: 20px !important;
+}
 .navBar-section {
     .navbar {
         background-color: #000;
@@ -33,7 +36,9 @@
     background-position: 50% 0 fixed;
     height: 100vh;
     position: relative;
-
+    @media (max-width: 767.98px){
+        margin-bottom: 30px;
+    }
 
 
 }
