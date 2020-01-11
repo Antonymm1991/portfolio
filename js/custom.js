@@ -25,13 +25,12 @@ $( document ).ready(function() {
 
     $('.instagram').owlCarousel({
         items:1,
-        loop: true,
+        // loop: true,
         lazyLoad:true,
-        loop:true,
+        // loop:true,
         margin:0,
-        autoplay: false,
-        autoplayHoverPause:true,
-        autoplaySpeed: 4000,
+        autoplay: true,
+        smartSpeed: 1000,
         responsive:{
             575.98:{
                 items:2,
