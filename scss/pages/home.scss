@@ -2,6 +2,10 @@ h1{
     margin-bottom: 20px !important;
 }
 .navBar-section {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: 0.3s;
     .navbar {
         background-color: #000;
 
@@ -28,12 +32,97 @@ h1{
 }
 
 
+.hamburger {
+    font: inherit;
+    display: flex;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity,filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .hamburger-box {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        margin: auto;
+    }
+}
+.hamburger--spin .hamburger-inner {
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-duration: .22s;
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.hamburger--spin .hamburger-inner:before {
+    transition: top .1s ease-in .25s,opacity .1s ease-in;
+    top: -8px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.hamburger--spin .hamburger-inner:after {
+    transition: bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19);
+    bottom: -8px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.hamburger--spin.is-active .hamburger-inner:before {
+    top: 0;
+    transition: top .1s ease-out,opacity .1s ease-out .12s;
+    opacity: 0;
+    background-color: #fff;
+}
+.hamburger--spin.is-active .hamburger-inner{
+    transform: rotate(45deg);
+}
+
+.hamburger--spin.is-active .hamburger-inner:after {
+    bottom: 0;
+    transition: bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;
+    transform: rotate(-90deg);
+    background-color: #fff;
+}
+
+.hamburger--spin.is-active .hamburger-inner:before {
+    top: 0;
+    transition: top .1s ease-out,opacity .1s ease-out .12s;
+    opacity: 0;
+}
+
 .banner-section {
     margin-bottom: 100px;
     background-image: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0 fixed;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
     @media (max-width: 767.98px){
