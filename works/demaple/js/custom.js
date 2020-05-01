@@ -165,45 +165,69 @@ $('.development-slider').owlCarousel({
 
 
 
-var container_left_margin = $('.container').css('marginLeft');
-$('.brand-box').css("margin-left", container_left_margin);
 
 
-// scroll Y direction start
-    const slider = document.querySelector('#product-list');
-let isDown = false;
-let startX;
-let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-  console.log(walk);
-});
 
-// scroll Y direction end
 
 $('.hamburger').click(function () {
   $(this).toggleClass('is-active');
   $('#overlay').toggleClass('open');
 });
+
+
+
+$(".1").hover(function () {
+  $(this).parents(".vdoWrapper").children("#vdo-1").toggleClass("active");
+  $(this).parents(".vdoWrapper").children("#vdo-2").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-3").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-4").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-5").toggleClass("hide");
+
+  
+});
+
+$(".2").hover(function () {
+  $(this).parents(".vdoWrapper").children("#vdo-2").toggleClass("active");
+  $(this).parents(".vdoWrapper").children("#vdo-1").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-3").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-4").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-5").toggleClass("hide");
+
+  
+});
+$(".3").hover(function () {
+  $(this).parents(".vdoWrapper").children("#vdo-3").toggleClass("active");
+  $(this).parents(".vdoWrapper").children("#vdo-1").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-2").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-4").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-5").toggleClass("hide");
+
+  
+});
+$(".4").hover(function () {
+  $(this).parents(".vdoWrapper").children("#vdo-4").toggleClass("active");
+  $(this).parents(".vdoWrapper").children("#vdo-1").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-2").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-3").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-5").toggleClass("hide");
+
+  
+});
+$(".5").hover(function () {
+  $(this).parents(".vdoWrapper").children("#vdo-5").toggleClass("active");
+  $(this).parents(".vdoWrapper").children("#vdo-1").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-2").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-3").toggleClass("hide");
+  $(this).parents(".vdoWrapper").children("#vdo-4").toggleClass("hide");
+
+  
+});
+
+
+
+
+
 
 
 
