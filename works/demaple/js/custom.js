@@ -199,7 +199,7 @@ $('.portfolioBox').owlCarousel({
 
 
 $('.hamburger').click(function () {
-  $(this).toggleClass('is-active');
+  // $(this).toggleClass('is-active');
   $('#overlay').toggleClass('open');
 });
 
