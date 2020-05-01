@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71.578" height="71.578" viewBox="0 0 71.578 71.578">
+  <g id="Outline_Icon" data-name="Outline Icon" transform="translate(-2 -2)">
+    <rect id="Rectangle_18085" data-name="Rectangle 18085" width="2" height="5" rx="1" transform="translate(36.789 8.789)" fill="#fff"/>
+    <rect id="Rectangle_18086" data-name="Rectangle 18086" width="5" height="2" rx="1" transform="translate(61.789 36.789)" fill="#fff"/>
+    <rect id="Rectangle_18087" data-name="Rectangle 18087" width="2" height="5" rx="1" transform="translate(36.789 61.789)" fill="#fff"/>
+    <rect id="Rectangle_18088" data-name="Rectangle 18088" width="5" height="2" rx="1" transform="translate(8.789 36.789)" fill="#fff"/>
+    <path id="Path_5621" data-name="Path 5621" d="M62.841,73.578h-50.1A10.749,10.749,0,0,1,2,62.841v-50.1A10.749,10.749,0,0,1,12.737,2h50.1A10.749,10.749,0,0,1,73.578,12.737v50.1A10.749,10.749,0,0,1,62.841,73.578ZM12.737,4.386a8.36,8.36,0,0,0-8.351,8.351v50.1a8.36,8.36,0,0,0,8.351,8.351h50.1a8.362,8.362,0,0,0,8.351-8.351v-50.1a8.362,8.362,0,0,0-8.351-8.351Z" fill="#fff"/>
+    <path id="Path_5622" data-name="Path 5622" d="M29.193,39.087a1.193,1.193,0,0,1-.843-2.036l16.7-16.7a1.193,1.193,0,1,1,1.687,1.687l-16.7,16.7A1.193,1.193,0,0,1,29.193,39.087Z" transform="translate(5.017 3.473)" fill="#fff"/>
+    <path id="Path_5623" data-name="Path 5623" d="M37.123,38.316a1.193,1.193,0,0,1-.843-.349L24.35,26.036a1.193,1.193,0,1,1,1.687-1.687l11.93,11.93a1.193,1.193,0,0,1-.843,2.036Z" transform="translate(4.245 4.245)" fill="#fff"/>
+  </g>
+</svg>

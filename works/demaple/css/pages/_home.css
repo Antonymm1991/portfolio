@@ -1,0 +1,48 @@
+.navBar-section .nav-bar {
+  margin-top: 60px; }
+  .navBar-section .nav-bar .menu {
+    height: 29px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px; }
+
+.home-banner {
+  background-color: #000000;
+  height: 100vh;
+  margin-top: -134.22px; }
+  .home-banner .banner {
+    height: 100vh;
+    position: relative; }
+    .home-banner .banner .left {
+      position: absolute;
+      left: 0;
+      bottom: 75px;
+      max-width: 540px; }
+      .home-banner .banner .left h3 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 2px; }
+      .home-banner .banner .left p {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 2; }
+      .home-banner .banner .left .primary-btn {
+        margin-top: 15%; }
+      .home-banner .banner .left .follow {
+        margin-top: 20%; }
+        .home-banner .banner .left .follow ul {
+          padding-left: 0;
+          list-style-type: none;
+          margin-bottom: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .home-banner .banner .left .follow ul li {
+            color: #fff;
+            margin-right: 20px; }
+            .home-banner .banner .left .follow ul li:first-child {
+              margin-right: 35px; }
+            .home-banner .banner .left .follow ul li a {
+              color: #fff; }
