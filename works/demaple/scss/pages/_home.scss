@@ -1119,7 +1119,11 @@
 
     .contact-img {
         position: relative;
-
+        .contact-img-1{
+            @media (max-width: 767.98px){
+                width: 100%;
+            }
+        }
         .contact-img-2 {
             position: absolute;
             top: 50%;
