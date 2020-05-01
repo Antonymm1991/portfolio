@@ -946,13 +946,13 @@
 }
 
 .portfolio-section {
-    margin-top: 100px;
+    padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
     overflow: hidden;
 
     @media (max-width: 767.98px) {
-        margin-top: 50px;
+        padding-top: 50px;
         padding-bottom: 50px;
     }
 
@@ -962,7 +962,9 @@
         right: -100px;
         top: 49px;
         z-index: 1;
+        @media (max-width: 767.98px){
 
+        }
         &:after {
             background-image: url(../images/leaf.svg);
             background-color: #d2b48c00;
@@ -1038,7 +1040,21 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeef2", endColorstr="#efeef2", GradientType=1);
         z-index: -1;
     }
+    .pulsating-circle {
+        width: 62px;
+    height: 62px;
+    left: 30px;
+    top: -23px;
+    z-index: 1;
 
+        &:after {
+            background-image: url(../images/leaf.svg);
+            background-color: #d2b48c00;
+            background-repeat: no-repeat;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
     .main-heading {
         margin-bottom: 35px;
     }
@@ -1160,6 +1176,7 @@
     @media (max-width: 767.98px) {
         padding-top: 30px;
         padding-bottom: 30px;
+        text-align: center;
     }
 
     .left {
@@ -1170,6 +1187,9 @@
             font-size: 14px;
             font-weight: 400;
             margin-bottom: 15px;
+            @media (max-width: 767.98px){
+                margin-bottom: 10px;
+            }
         }
 
         h3 {
@@ -1177,6 +1197,9 @@
             font-size: 14px;
             font-weight: 600;
             margin-bottom: 50px;
+            @media (max-width: 767.98px){
+                margin-bottom: 20px;
+            }
         }
 
         ul {
@@ -1184,7 +1207,9 @@
             list-style-type: none;
             margin-bottom: 0;
             display: flex;
-
+            @media (max-width: 767.98px){
+               justify-content: center;
+            }
             li {
                 color: #fff;
                 margin-right: 20px;
@@ -1232,7 +1257,9 @@
             color: #fff;
             display: flex;
             flex-wrap: wrap;
-
+            @media (max-width: 767.98px){
+                justify-content: center;
+            }
             li {
                 margin-right: 35px;
 
@@ -1420,7 +1447,17 @@
     }
 
 }
-
+.pulsating-circle.one{
+    left: 48%;
+    bottom: -25px;
+    top: inherit;
+    @media (max-width: 767.98px){
+        right: -3px;
+    bottom: 135px;
+    top: inherit;
+    left: inherit;
+    }
+}
 @keyframes moveDown {
     0% {
         transform: translateY(0);
@@ -1440,7 +1477,9 @@
 .services-section {
     margin-top: 100px;
     overflow: hidden;
-
+    @media (max-width: 767.98px){
+        margin-top: 50px;
+    }
     .wellness-heading {
         h1 {
             text-align: center;
