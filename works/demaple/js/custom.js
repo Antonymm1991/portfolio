@@ -200,6 +200,11 @@ slider.addEventListener('mousemove', (e) => {
 
 // scroll Y direction end
 
+$('.hamburger').click(function () {
+  $(this).toggleClass('is-active');
+  $('#overlay').toggleClass('open');
+});
+
 
 
     
