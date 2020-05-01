@@ -1,0 +1,132 @@
+.expertise-banner{
+    .pulsating-circle{
+        left: 70%;
+    }
+}
+
+
+
+.myExpertise-section{
+    margin-top: -70vh;
+    margin-bottom: 120px;
+    .myExpertise{
+        max-width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+        .main-heading{
+            color: #fff;
+            margin-bottom: 60px;
+            
+            
+        }
+        .heading-content{
+            color: #999;
+        }
+        
+    }
+
+}
+
+.expertiseProduct-section{
+    overflow: hidden;
+    position: relative;
+    .pulsating-circle{
+        width: 46px;
+    height: 46px;
+    right: -43px;
+    top: 28%;
+    z-index: -1;
+    &:after{
+        background-color: #000;
+    }
+    }
+    .pulsating-circle.big{
+        width: 118px;
+    height: 118px;
+    left: -0;
+    top: 56%;
+    z-index: -1;
+    &:after{
+        background-color: #000;
+    }
+    }
+    .expertiseProduct.first{
+        .story-detail{
+            .box{
+                h3{
+                    color: rgb(255, 255, 255);
+                    margin-bottom: 60px ;
+                    @media (max-width: 767.98px){
+                        color: rgb(0, 0, 0) !important;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .expertiseProduct.even{
+        .story-detail{
+            .box{
+                text-align: right;
+                margin-left: 0;
+                margin-right: 45px;
+                @media (max-width: 767.98px){
+                    margin-right: 0;
+                }
+                .primary-btn{
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+
+
+    .expertiseProduct{
+        margin-bottom: 100px;
+        @media (max-width: 767.98px){
+            margin-bottom: 30px;
+        }
+        .imgWrapper{
+            img{
+                width: 100%;
+            }
+        }
+        .story-detail{
+            display: flex;
+            height: 100%;
+            .box{
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 50px;
+                @media (max-width: 767.98px){
+                    margin-left: 0px;
+                    margin-top: 15px;
+                }
+                h3{
+                    font-size: 40px;
+                    color: rgb(0, 0, 0);
+                    font-weight: bold;
+                    margin-bottom: 30px;
+                    @media (max-width: 767.98px){
+                        font-size: 30px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .primary-btn {
+        
+                    color: #000;
+        
+                    &::before {
+                        background-color: #DADAE2;
+                    }
+        
+                    &::after {
+                        background-image: url("../images/arrow-2.svg");
+                    }
+                }
+            }
+        }
+    }
+    
+}

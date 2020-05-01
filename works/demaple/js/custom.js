@@ -209,8 +209,8 @@ slider.addEventListener('mousemove', (e) => {
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        $(".nav-section").addClass("sticky");
+        $(".navBar-section").addClass("sticky");
     } else {  
-        $(".nav-section").removeClass("sticky");
+        $(".navBar-section").removeClass("sticky");
     }
   }
