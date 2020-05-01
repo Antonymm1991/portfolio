@@ -110,6 +110,9 @@
         left: 25%;
         bottom: -52px;
         z-index: 1;
+        @media (max-width: 767.98px){
+            left: 70%;
+        }
 
         &:after {
             background-image: url(../images/leaf.svg);
@@ -170,6 +173,9 @@
     .imgWrapper {
         position: relative;
         padding: 45px;
+        @media (max-width: 767.98px){
+            padding: 15px 0 0 0;
+        }
         // &::after {
         //     position: absolute;
         //     content: "";
@@ -332,7 +338,9 @@
         left: 25%;
         bottom: -52px;
         z-index: 1;
-
+        @media (max-width: 767.98px){
+            left: 10% !important;
+        }
         &:after {
             background-image: url(../images/leaf-white.svg);
             background-color: #d2b48c00;
@@ -932,7 +940,7 @@
     }
 }
 
-.gallery-section {
+.portfolio-section {
     margin-top: 100px;
     padding-bottom: 100px;
     position: relative;
@@ -991,10 +999,8 @@
         }
     }
 
-    .galleryBox {
-        display: flex;
-        flex-wrap: wrap;
-
+    .portfolioBox {
+        margin-top: 30px;
         // .imgWrapper{
         //     margin-right: 15px;
         //     img{
@@ -1002,38 +1008,7 @@
         //         height: auto;
         //     }
         // }
-        .gallery-row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-            margin-left: -15px;
-            margin-right: -15px;
-
-            .column {
-                -ms-flex: 33.33%;
-                /* IE10 */
-                flex: 33.33%;
-                max-width: 33.33%;
-                padding: 0 15px;
-
-                @media (max-width: 767.98px) {
-                    padding: 0 5px;
-                }
-
-                img {
-                    margin-top: 30px;
-                    vertical-align: middle;
-                    width: 100%;
-
-                    @media (max-width: 767.98px) {
-                        margin-top: 10px;
-                    }
-                }
-            }
-        }
+        
     }
 }
 
@@ -1524,7 +1499,9 @@
             display: flex;
             height: 100%;
             width: 100%;
-
+            box-shadow: inset 0 -77px 49px 0px #00000099;
+            
+            
             @media (max-width: 980px) {
                 flex-direction: column;
             }
@@ -1537,6 +1514,7 @@
                 display: flex;
                 flex-direction: column;
                 padding: 30px 15px;
+                
 &:hover{
     background-color: rgba(0, 0, 0, 0.349);
     p{
@@ -1554,6 +1532,7 @@
                 h1 {
                     color: #fff;
                     margin-top: auto;
+                    font-size: 26px;
                 }
 
                 p {

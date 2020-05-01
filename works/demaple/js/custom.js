@@ -97,6 +97,34 @@ $('.development-slider').owlCarousel({
   }
 });
 
+
+
+$('.portfolioBox').owlCarousel({
+  // stagePadding: 50,
+  loop:true,
+  margin:30,
+  responsiveClass:true,
+  smartSpeed:1500,
+  dots:false,
+  nav: true,
+  navText: ["<img src='images/prev.png'>","<img src='images/next.png'>"],
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      767:{
+          items:2,
+          nav:true
+      },
+      991:{
+          items:3.3,
+          nav:true,
+          loop:false
+      }
+  }
+});
+
 // var productOwl = $('.product-right');
 // productOwl.owlCarousel({
 //     loop:false,

@@ -10,6 +10,7 @@
             rel="stylesheet">
         <link href="css/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <!-- <style>
             .pulsating-circle{
                 display: none;
@@ -174,11 +175,14 @@
             <section class="services-section">
                 <div class="row">
                     <div class="container">
-                        <h1 class="main-heading" data-aos="fade-up" data-aos-duration="2000">Services</h1>
-                    <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">Lorem, ipsum
-                        dolor sit amet consectetur adipisicing elit. Nostrum distinctio nemo, explicabo
-                        necessitatibus, aperiam sed a quam aliquam dolore cumque qui!
-                    </p>
+                        <div class="col-12">
+                            <h1 class="main-heading" data-aos="fade-up" data-aos-duration="2000">Services</h1>
+                            <p class="text-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">Lorem, ipsum
+                                dolor sit amet consectetur adipisicing elit. Nostrum distinctio nemo, explicabo
+                                necessitatibus, aperiam sed a quam aliquam dolore cumque qui!
+                            </p>
+                        </div>
+                        
                     </div>
                 </div>
                 
@@ -219,8 +223,9 @@
 
            
 
-            <section class="gallery-section">
+            <section class="portfolio-section">
                 <div class="pulsating-circle"></div>
+               
                 <div class="container">
                     <h1 class="main-heading" data-aos="fade-up" data-aos-duration="2000">PORTFOLIO</h1>
                     <div
@@ -233,34 +238,28 @@
                             anything when you have so many options around you.
                         </p>
                         <a class="primary-btn" href="" data-aos="fade-up" data-aos-duration="2000">View All</a>
+                        
                     </div>
-                    <div class="galleryBox">
-                        <!-- <div class="imgWrapper"> <img class="img-fluid" src="images/gallery-1.jpg"
-                        alt="gallery"> </div> <div class="imgWrapper"> <img class="img-fluid"
-                        src="images/gallery-1.jpg" alt="gallery"> </div> <div class="imgWrapper"> <img
-                        class="img-fluid" src="images/gallery-1.jpg" alt="gallery"> </div> <div
-                        class="imgWrapper"> <img class="img-fluid" src="images/gallery-1.jpg"
-                        alt="gallery"> </div> -->
+                    
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="col-12">
+                            <div class="portfolioBox owl-carousel">
 
-                        <div class="gallery-row" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="column">
-                                <img src="images/gallery-1.jpg">
-                                <img src="images/gallery-2.jpg">
+                                <a data-fancybox="gallery" href="images/gallery-1.jpg"><img src="images/gallery-1.jpg"></a>
+                                <a data-fancybox="gallery" href="images/gallery-2.jpg"><img src="images/gallery-2.jpg"></a>
+                                <a data-fancybox="gallery" href="images/gallery-3.jpg"><img src="images/gallery-3.jpg"></a>
+                                <a data-fancybox="gallery" href="images/gallery-1.jpg"><img src="images/gallery-1.jpg"></a>
+                                <a data-fancybox="gallery" href="images/gallery-2.jpg"><img src="images/gallery-2.jpg"></a>
+                                <a data-fancybox="gallery" href="images/gallery-3.jpg"><img src="images/gallery-3.jpg"></a>
 
+                                
                             </div>
-                            <div class="column">
-                                <img src="images/gallery-2.jpg">
-                                <img src="images/gallery-3.jpg">
-                            </div>
-                            <div class="column">
-                                <img src="images/gallery-3.jpg">
-                                <img src="images/gallery-1.jpg">
-                            </div>
-
                         </div>
-
                     </div>
                 </div>
+                
             </section>
             <section class="contact-section">
                 <div class="container">
@@ -509,6 +508,7 @@
         <script src="js/jquery-ui.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <!-- <script
         src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
         <script
