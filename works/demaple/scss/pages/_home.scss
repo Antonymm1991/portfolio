@@ -15,7 +15,7 @@
             padding: 5px;
 
             @media (max-width: 767.98px) {
-                margin-top: 30px;
+                margin-top: 0px;
             }
 
             img {
@@ -72,7 +72,7 @@
         }
         .navbar-brand{
             @media (max-width: 767.98px) {
-                margin-top: 50px;
+                margin-top: 0;
             }
         }
     }
@@ -1121,7 +1121,7 @@
             color: #000;
             border: none;
             background-color: transparent;
-            margin-top: 20px;
+            margin-top: 10px !important;
 
             &::before {
                 background-color: #DADAE2;
@@ -1479,6 +1479,12 @@
     overflow: hidden;
     @media (max-width: 767.98px){
         margin-top: 50px;
+    }
+    .heading-content{
+        max-width: 841px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
     }
     .wellness-heading {
         h1 {
