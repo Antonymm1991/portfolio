@@ -1,5 +1,6 @@
 h1{
     margin-bottom: 20px !important;
+    text-align: center;
 }
 .navBar-section {
     position: fixed;
@@ -140,11 +141,8 @@ h1{
     .image-hover {
         box-shadow: 0 28px 16px -26px #0000007a;
         transition: all 0.3s ease-in-out;
-        max-width: 325px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
         @media (max-width: 767.98px){
-            max-width: 100%;
             margin-bottom: 30px;
         }
 
@@ -158,10 +156,14 @@ h1{
             width: 100%;
         }
     }
-
-    p {
-        text-align: justify;
+    .aboutpara{
+        position: relative;
+        .para{
+            text-align: justify;
         font-size: 16px;
+        line-height: 1.9;
+            
+        }
     }
 }
 
@@ -183,7 +185,9 @@ h1{
 
 .photography-section {
     margin-top: 100px;
-
+    @media (max-width: 767.98px){
+        margin-top: 30px;
+    }
     .instagram {
         .owl-stage-outer {
             .owl-stage {
@@ -198,13 +202,15 @@ h1{
                         &:after{
                             position: absolute;
                             content: "";
-                            width: 20px;
-                            height: 20px;
+                            width: 40px;
+                            height: 40px;
                             background-image: url("../images/instagram.svg");
                             background-repeat: no-repeat;
                             background-size: contain;
-                            top: 20px;
-                            right: 20px;
+                            top: 0;
+                            right: 0;
+                            background-color: #000;
+                            border: 9px solid #000;
                         }
 
                         img {
@@ -389,17 +395,7 @@ h1{
     }
 }
 
-.aboutpara{
-    position: relative;
-    .para{
-        position: absolute;
-        top: 0;
-        left: 0;
-        @media (max-width: 767.98px){
-            position: static;
-        }
-    }
-}
+
 
 
 
