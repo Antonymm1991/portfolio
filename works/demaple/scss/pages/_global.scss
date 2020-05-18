@@ -83,37 +83,7 @@ p {
   font-weight: 400;
 }
 
-.inner-banner {
-  display: flex;
-  background-color: #000;
-  margin-top: -121px;
-  height: 100vh;
 
-  @media (max-width: 767.98px) {
-    margin-top: -76px;
-  }
-
-  .pulsating-circle{
-    width: 50px;
-    height: 50px;
-    top: 0;
-    z-index: 0;
-    left: 45%;
-    @media (max-width: 767.98px){
-      left: inherit;
-      right: 10px;
-    }
-    &:after{
-        background-color: rgb(255, 255, 255);
-    }
-}
-
-
-  .inner-banner-img {
-    margin: auto;
-    opacity: 0.1;
-  }
-}
 
 // pulse cicle animation stary
 .pulsating-circle {
@@ -616,3 +586,22 @@ p {
 
 }
 
+.innerBanner{
+  display: flex;
+  padding-top: 85px;
+  background-color: #000;
+  height: 500px;
+  background-image: url(../images/2.png);
+  background-repeat-y: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  .main-heading{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+}
