@@ -52,10 +52,51 @@
         .collapse {
             .navbar-nav {
                 .nav-item {
+                    &:hover{
+                        .nav-link{
+                            &::after{
+                                width: 50.5%;
+                            }
+                            &::before{
+                                width: 50.5%;
+                            }
+                        }
+                    }
                     .nav-link {
                         color: #fff;
-                        padding-right: 2rem;
-                        padding-left: 2rem;
+                        margin-right: 2rem;
+                        margin-left: 2rem;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            right: 0;
+                            bottom: 0;
+                            width: 0;
+                            height: 2px;
+                            background-color: #fff;
+                            transition: 0.3s;
+                        }
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            left: 0;
+                            bottom: 0;
+                            width: 0;
+                            height: 2px;
+                            background-color: #fff;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                .nav-item.active{
+                    .nav-link{
+                        &::after{
+                            width: 50.5%;
+                        }
+                        &::before{
+                            width: 50.5%;
+                        }
                     }
                 }
             }
@@ -1015,7 +1056,12 @@
         //         height: auto;
         //     }
         // }
-        
+        .owl-item{
+            img{
+                height: 350px;
+                object-fit: cover;
+            }
+        }
     }
 }
 

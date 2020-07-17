@@ -20,6 +20,7 @@
 
 
 .portfolio-page{
+    padding-top: 50px;
     .imgWrapper{
         padding-bottom: 30px;
         height: 350px;
@@ -41,16 +42,20 @@
         margin-bottom: 30px;
     }
     .serviceWrapper{
-        border: 1px solid #000;
         margin-bottom: 30px;
         box-shadow: 0 28px 16px -26px #0000007a;
         transition: 0.3s;
+        position: relative;
+        margin: auto;
         &:hover{
-            box-shadow: 0 0px 0px 0px #0000007a;
+            box-shadow: 0 28px 16px -26px #0000007a;
+            
+            
         }
         .imgWrapper{
-            height: 210px;
-            padding: 5px;
+            // height: 210px;
+            padding: 15px;
+            
             img{
                 width: 100%;
                 height: 100%;
@@ -58,15 +63,27 @@
                 object-position: center;
             }
         }
+        
+    }
+    .serviceWrapper-detail{
+        margin: auto;
         .serviceDetail{
-            padding: 5px;
-            background-color: #f0f0f0;
+            
+            padding: 30px;
+            height: 100%;
+            z-index: 1;
+            text-align: center;
             h1{
-                font-size: 20px;
+                font-size: 33px;
+                color: black;
+                letter-spacing: 4px;
             }
             p{
                 margin-bottom: 0;
+                color: rgb(0, 0, 0);
             }
+            
+            
         }
     }
     .pulsating-circle {
@@ -102,7 +119,48 @@
         transform: scaleX(-1);
     }
 
-
+    .odd{
+        margin-top: 30px;
+        .serviceWrapper{
+            margin-right: 0;
+            @media (max-width: 767.98px){
+                margin-right: auto;
+            }
+        }
+        .serviceDetail{
+            padding-left: 0;
+            @media (max-width: 767.98px){
+                padding-left: 30px;
+            }
+        }
+        h1, p{
+            text-align: left;
+            @media (max-width: 767.98px){
+                text-align: center;
+            }
+        }
+    }
+    .even{
+        margin-top: 30px;
+        .serviceWrapper{
+            margin-left: 0;
+            @media (max-width: 767.98px){
+                margin-left: auto;
+            }
+        }
+        .serviceDetail{
+            padding-right: 0;
+            @media (max-width: 767.98px){
+                padding-right: 30px;
+            }
+        }
+        h1, p{
+            text-align: right;
+            @media (max-width: 767.98px){
+                text-align: center;
+            }
+        }
+    }
 }
 
 .contactPage{
@@ -149,5 +207,38 @@
         left: -31px;
         top: 50%;
         transform: scaleX(-1);
+    }
+}
+
+.portfolio-tab{
+    
+    margin-top: 100px;
+    .nav{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #000000;
+        // @media (max-width: 575.98px){
+        //     flex-direction: column;
+        //     border-bottom: 1px solid #00000000;
+        // }
+        .nav-item.nav-link{
+            cursor: pointer;
+            border-bottom: 1px solid #00000000;
+            text-align: center;
+            @media (max-width: 575.98px){
+                width: 33.33%;
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+        .nav-item.nav-link.active{
+            border-color: #000000 #000000 #fff;
+        }
+        .nav-item.nav-link.active:hover{
+            border-color: #000000 #000000 #fff;
+        }
+        .nav-item.nav-link:hover{
+            border-color: #dee2e6 #dee2e6 rgba(255, 255, 255, 0);
+        }
     }
 }
