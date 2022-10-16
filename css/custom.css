@@ -1,0 +1,44 @@
+.banner-section {
+    background-image: url("../images/cover-pic.JPG");
+    background-size: contain;
+    background-position: center right;
+    background-color: black;
+    filter: sepia();
+    position: relative;
+}
+
+.banner-section::after{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 67%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 67%, rgba(0,0,0,0) 100%);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 67%, rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+@media (max-width: 1199.98px){
+    .banner-section{
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .banner-section::after{
+        display: none;
+    }
+    .caption{
+        width: 100%;
+    }
+}
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.caption h1, h2{
+    text-align: center;
+    color: white;
+}
