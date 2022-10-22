@@ -1,0 +1,86 @@
+.banner-section {
+    background-image: url("../images/cover-pic.JPG");
+    background-size: contain;
+    background-position: center right;
+    background-color: black;
+    filter: sepia();
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-section::after{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 67%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 67%, rgba(0,0,0,0) 100%);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 67%, rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+@media (max-width: 1199.98px){
+    .banner-section{
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .banner-section::after{
+        display: none;
+    }
+    .caption{
+        width: 100%;
+    }
+}
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+.caption h1, h2{
+    text-align: center;
+    color: white;
+}
+
+.circleAnime{
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.142);
+    /* animation: 4s linear 0s infinite cssAnimation ; */
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 767.98px){
+    .circleAnime{
+        top: -70%;
+    left: -70%;
+    }
+}
+.circleAnime1{
+    animation: 10s linear 0s infinite cssAnimation ;
+} 
+.circleAnime2{
+    animation: 20s linear 0s infinite cssAnimation ;
+} 
+.circleAnime3{
+    animation: 30s linear 0s infinite cssAnimation ;
+} 
+.circleAnime4{
+    animation: 40s linear 0s infinite cssAnimation ;
+} 
+.circleAnime5{
+    animation: 50s linear 0s infinite cssAnimation ;
+} 
+.circleAnime6{
+    animation: 60s linear 0s infinite cssAnimation ;
+} 
+@-webkit-keyframes cssAnimation {
+  from { -webkit-transform: rotate(360deg); }
+  to { -webkit-transform: rotate(0deg); }
+}
