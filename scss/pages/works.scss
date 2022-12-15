@@ -1,0 +1,28 @@
+
+.works-sectionPage{
+    margin-top: 100px;
+    @media (max-width: 767.98px){
+        margin-top: 30px;
+    }
+    h1{
+        margin-bottom: 45px !important;
+    }
+    .works{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 30px -20px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px -20px;
+        transition: 0.3s;
+     }
+        }
+    }
+}

@@ -1,0 +1,412 @@
+h1 {
+  margin-bottom: 20px !important;
+  text-align: center;
+}
+
+.navBar-section {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.navBar-section .navbar {
+  background-color: #000;
+}
+
+.navBar-section .navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navBar-section .navbar .navbar-brand img {
+  width: 116px;
+}
+
+.navBar-section .navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.hamburger {
+  font: inherit;
+  display: flex;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity,filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+}
+
+.hamburger:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.hamburger .hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin: auto;
+}
+
+.hamburger--spin .hamburger-inner {
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition-duration: .22s;
+  top: 50%;
+  display: block;
+  margin-top: -2px;
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.hamburger--spin .hamburger-inner:before {
+  transition: top .1s ease-in .25s,opacity .1s ease-in;
+  top: -8px;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.hamburger--spin .hamburger-inner:after {
+  transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  bottom: -8px;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.hamburger--spin.is-active .hamburger-inner:before {
+  top: 0;
+  transition: top .1s ease-out,opacity .1s ease-out .12s;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(45deg);
+}
+
+.hamburger--spin.is-active .hamburger-inner:after {
+  bottom: 0;
+  transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  transform: rotate(-90deg);
+  background-color: #fff;
+}
+
+.hamburger--spin.is-active .hamburger-inner:before {
+  top: 0;
+  transition: top .1s ease-out,opacity .1s ease-out .12s;
+  opacity: 0;
+}
+
+.banner-section {
+  margin-bottom: 100px;
+  background-image: url("../images/photography/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+  .banner-section {
+    margin-bottom: 30px;
+    background-attachment: inherit;
+    background-position: 37%;
+  }
+}
+
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section .image-hover {
+  box-shadow: 0 28px 16px -26px #0000007a;
+  transition: all 0.3s ease-in-out;
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .about-section .image-hover {
+    margin-bottom: 30px;
+  }
+}
+
+.about-section .image-hover:hover {
+  box-shadow: 0 58px 36px -56px #0000007a;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.about-section .image-hover img {
+  width: 100%;
+}
+
+.about-section .aboutpara {
+  position: relative;
+}
+
+.about-section .aboutpara .para {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tool-section {
+  margin-top: 100px;
+}
+
+@media (max-width: 767.98px) {
+  .tool-section {
+    margin-top: 30px;
+  }
+}
+
+.tool-section .tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tool-section .tool-list li {
+  width: 25%;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .tool-section .tool-list li {
+    width: 50%;
+  }
+}
+
+.tool-section .tool-list li a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  height: 100%;
+}
+
+.tool-section .tool-list li a img {
+  max-width: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tool-section .tool-list li a p {
+  margin-bottom: 0;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.photography-section {
+  margin-top: 100px;
+}
+
+@media (max-width: 767.98px) {
+  .photography-section {
+    margin-top: 30px;
+  }
+}
+
+.photography-section .instagram .owl-stage-outer .owl-stage {
+  display: flex;
+}
+
+.photography-section .instagram .owl-stage-outer .owl-stage .owl-item a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.photography-section .instagram .owl-stage-outer .owl-stage .owl-item a:after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/instagram.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  border: 9px solid #000;
+}
+
+.photography-section .instagram .owl-stage-outer .owl-stage .owl-item a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photography-section .instagram .owl-dots {
+  display: none;
+}
+
+#followMe-id {
+  background-color: #dedede;
+  padding: 40px 0px;
+}
+
+#followMe-id .followMe {
+  text-align: center;
+}
+
+#followMe-id .followMe ul {
+  margin-bottom: 0px;
+  padding-left: 0;
+}
+
+#followMe-id .followMe ul li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+#followMe-id .followMe ul li:nth-child(1) a:hover span svg path {
+  fill: #3b5998;
+}
+
+#followMe-id .followMe ul li:nth-child(2) a:hover span svg path {
+  fill: #0cd261;
+}
+
+#followMe-id .followMe ul li:nth-child(3) a:hover span svg path {
+  fill: #bc2a8d;
+}
+
+#followMe-id .followMe ul li:nth-child(4) a:hover span svg path {
+  fill: #007bb6;
+}
+
+#followMe-id .followMe ul li:nth-child(5) a:hover span svg path {
+  fill: #00aced;
+}
+
+#followMe-id .followMe ul li:nth-child(6) a:hover span svg path {
+  fill: #dd4b39;
+}
+
+#followMe-id .followMe ul li a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: 0.5s;
+}
+
+#followMe-id .followMe ul li a:hover {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+#followMe-id .followMe ul li a span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size: 24px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.footer-wrapper {
+  font-size: 14px;
+  background-color: black;
+  line-height: 55px;
+}
+
+.footer-wrapper .footer-text p {
+  color: white;
+  margin: 0;
+}
+
+.ripple {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  border-radius: 50%;
+  z-index: 4;
+  animation: pulse 4s infinite;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.inner-ripple {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #1a1a1a;
+}
+
+.middle-ripple {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  animation-delay: 0.35s;
+  border: 1px solid #1a1a1a;
+}
+
+.outer-ripple {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  animation-delay: 0.75s;
+  border: 1px solid #1a1a1a;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(1) translateX(-50%) translateY(-50%);
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.5) translateX(-33.3%) translateY(-33.3%);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=home.css.map */
