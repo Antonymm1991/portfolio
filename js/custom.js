@@ -80,6 +80,10 @@ $( document ).ready(function() {
     $(".hamburger").click(function(){
       $(this).toggleClass("is-active");
     });
-
-
+//auto update year in footr
+let now = new Date();
+let currentYear = now.getFullYear(); 
+let year = document.querySelector(".year");
+year.textContent = currentYear;
+    
 });
